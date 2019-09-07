@@ -2,7 +2,9 @@
 
 namespace Chat.Bot.Core
 {
-    public class Class1
+    public class AutomatedMessage
     {
+        public int DelayInMinutes { get; set; }
+        public string Message { get; set; }
     }
 }
