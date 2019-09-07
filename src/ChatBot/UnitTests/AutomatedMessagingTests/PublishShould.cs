@@ -1,5 +1,4 @@
-﻿
-using Chat.Bot.Core;
+﻿using Chat.Bot.Core;
 using Xunit;
 
 namespace UnitTests.AutomatedMessagingTests
@@ -19,7 +18,6 @@ namespace UnitTests.AutomatedMessagingTests
             messagingSystem.Publish(intervalTriggeredMessage);
 
             Assert.Contains(intervalTriggeredMessage, messagingSystem.ManageMessages);
-
         }
     }
 }

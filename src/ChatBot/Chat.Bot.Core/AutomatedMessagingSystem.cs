@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace Chat.Bot.Core
 {
-    public class AutomatedMessagingSystem 
+    public class AutomatedMessagingSystem
     {
         public List<IntervalTriggeredMessage> ManageMessages { get; set; } = new List<IntervalTriggeredMessage>();
         public List<string> QueuedMessages { get; set; } = new List<string>();
 
-    
-
-        public void Publish(IntervalTriggeredMessage automatedMessage)
+        public void Publish(IntervalTriggeredMessage intervalTriggeredMessage)
         {
-            ManageMessages.Add(automatedMessage);
+            ManageMessages.Add(intervalTriggeredMessage);
         }
+
+
     }
 }

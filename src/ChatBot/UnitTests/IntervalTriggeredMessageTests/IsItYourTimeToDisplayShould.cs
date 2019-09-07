@@ -9,7 +9,7 @@ namespace UnitTests.IntervalTriggeredMessageTests
         [Fact]
         public void ReturnFalse_AtInitialCreation()
         {
-            var intervalTriggeredMessage = new IntervalTriggeredMessage { DelayInMinutes = 1, Message = "Hello there!"};
+            var intervalTriggeredMessage = new IntervalTriggeredMessage { DelayInMinutes = 1, Message = "Hello there!" };
             intervalTriggeredMessage.Initialize(DateTime.Now);
             Assert.False(intervalTriggeredMessage.IsItYourTimeToDisplay(DateTime.Now));
         }

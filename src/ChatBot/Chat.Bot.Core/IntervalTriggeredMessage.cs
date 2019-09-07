@@ -15,10 +15,7 @@ namespace Chat.Bot.Core
 
         public bool IsItYourTimeToDisplay(DateTime currentTime)
         {
-            if (_previousRunTimes.AddMinutes(DelayInMinutes) > currentTime)
-                return false;
-
-            return true;
+            return _previousRunTimes.AddMinutes(DelayInMinutes) <= currentTime;
         }
     }
 }
