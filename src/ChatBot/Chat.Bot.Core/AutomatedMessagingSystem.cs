@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Chat.Bot.Core
 {
@@ -12,6 +14,12 @@ namespace Chat.Bot.Core
             ManagedAutomatedMessages.Add(automatedMessage);
         }
 
+        public void CheckMessages(DateTime currentTime)
+        {
+            var messagesToQueue = ManagedAutomatedMessages.Where(m => m.IsItYourTimeToDisplay(currentTime)).Select(m => m.GetMessageInstance
+            (currentTime));
 
+            QueuedMessages.AddRange(messagesToQueue);
+        }
     }
 }
