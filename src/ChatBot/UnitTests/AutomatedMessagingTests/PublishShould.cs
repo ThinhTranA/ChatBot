@@ -10,15 +10,15 @@ namespace UnitTests.AutomatedMessagingTests
         public void AddAutomatedMessageToManagedMessages()
         {
             var messagingSystem = new AutomatedMessagingSystem();
-            var automatedMessage = new AutomatedMessage
+            var intervalTriggeredMessage = new IntervalTriggeredMessage
             {
                 DelayInMinutes = 1,
                 Message = "Welcome! If you are enjoying the content, please follow for more!"
             };
 
-            messagingSystem.Publish(automatedMessage);
+            messagingSystem.Publish(intervalTriggeredMessage);
 
-            Assert.Contains(automatedMessage, messagingSystem.ManageMessages);
+            Assert.Contains(intervalTriggeredMessage, messagingSystem.ManageMessages);
 
         }
     }
