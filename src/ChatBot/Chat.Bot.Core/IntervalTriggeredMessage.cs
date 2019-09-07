@@ -8,6 +8,12 @@ namespace Chat.Bot.Core
         public int DelayInMinutes { get; set; }
         public string Message { get; set; }
 
+        public string GetMessageInstance(DateTime currentTime)
+        {
+            _previousRunTimes = currentTime;
+            return Message;
+        }
+
         public void Initialize(DateTime currentTime)
         {
             _previousRunTimes = currentTime;
