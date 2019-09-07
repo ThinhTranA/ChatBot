@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat.Bot", "ChatBot\Chat.Bot.csproj", "{5253D7D2-C6FB-4B87-B3DC-422B776C27F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat.Bot", "Chat.Bot\Chat.Bot.csproj", "{5253D7D2-C6FB-4B87-B3DC-422B776C27F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{97CB27B4-B3D6-49B9-8AA2-4355C5C6527E}"
 EndProject
