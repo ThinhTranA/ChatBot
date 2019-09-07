@@ -4,12 +4,12 @@ namespace Chat.Bot.Core
 {
     public class AutomatedMessagingSystem
     {
-        public List<IntervalTriggeredMessage> ManageMessages { get; set; } = new List<IntervalTriggeredMessage>();
+        public List<IAutomatedMessage> ManagedAutomatedMessages { get; set; } = new List<IAutomatedMessage>();
         public List<string> QueuedMessages { get; set; } = new List<string>();
 
-        public void Publish(IntervalTriggeredMessage intervalTriggeredMessage)
+        public void Publish(IAutomatedMessage automatedMessage)
         {
-            ManageMessages.Add(intervalTriggeredMessage);
+            ManagedAutomatedMessages.Add(automatedMessage);
         }
 
 
