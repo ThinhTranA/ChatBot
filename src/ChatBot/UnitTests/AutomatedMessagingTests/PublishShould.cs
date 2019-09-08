@@ -17,7 +17,7 @@ namespace UnitTests.AutomatedMessagingTests
 
             messagingSystem.Publish(intervalTriggeredMessage);
 
-            Assert.Contains(intervalTriggeredMessage, messagingSystem.ManagedAutomatedMessages);
+            Assert.Contains(intervalTriggeredMessage, messagingSystem.ManagedMessages);
         }
     }
 }
